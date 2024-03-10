@@ -1011,12 +1011,14 @@ h2 {
 
 #section-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(auto, auto);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     gap: 10px;
     padding: 20px;
     align-items: start;
+    margin-bottom: 50px
 }
+
+
 
 .card {
     background-color: #f9f9f9;
@@ -1041,14 +1043,16 @@ h2 {
 /* Responsive */
 @media (min-width: 1001px) {
     #section-cards {
-        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(4, minmax(250px, 340px));
         gap: 20px;
     }
 }
 
 @media (max-width: 1024px) {
     #section-cards {
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-columns: repeat(4, minmax(250px, 300px));
     }
 }
 
