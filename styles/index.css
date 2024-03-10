@@ -932,3 +932,56 @@ h2 {
 }
 
 /* End UserPanel */
+
+/* About */
+.content-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+    text-align: justify;
+}
+
+.text-container h2 {
+    color: #004B87;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* End About */
