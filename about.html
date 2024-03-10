@@ -20,8 +20,8 @@
         </ul>
         <ul id="sectionsNavbar">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="#" id="loginLink">Iniciar Sesion</a></li>
+            <li><a href="login.html">Acerca de</a></li>
+            <li><a href="login.html">Iniciar Sesion</a></li>
         </ul>
     </nav>
 
@@ -58,28 +58,6 @@
         </div>
     </div>
 </article>
-<div id="loginModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <img src="/assets/logo.png" alt="Logo" class="modal-logo">
-            <h2>Inicio de sesión!</h2>
-        </div>
-        <div class="modal-body">
-            <form id="loginForm" action="dashboardUser.html">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required placeholder="pepitoperez@usc.edu.co">
-
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" placeholder="Contraseña" name="password" required>
-
-                <button type="submit" class="btn-login">Iniciar Sesión</button>
-            </form>
-        </div>
-    </div>
-
-</div>
 
 <body>
     <main>
@@ -89,11 +67,9 @@
         <section class="code-warriors-container">
             <div class="content">
                 <div id="contentDescript">
-                    <p>La Universidad Santiago de Cali lanza USC-CodeWarriors, una iniciativa para
-                        fortalecer la lógica
+                    <p>La Universidad Santiago de Cali lanza USC-CodeWarriors, una iniciativa para fortalecer la lógica
                         y
-                        eficiencia de programación de los estudiantes mediante retos prácticos y
-                        aprendizaje
+                        eficiencia de programación de los estudiantes mediante retos prácticos y aprendizaje
                         colaborativo.
                     </p>
                 </div>
@@ -106,53 +82,25 @@
         <section class="usc-section">
             <div class="usc-content">
                 <h2>Qué es USC - Code Warriors?</h2>
-                <p>USC- CodeWarriors es una plataforma concebida para ser usada en la práctica de la
-                    programación
-                    competitiva dentro del campus de la Universidad Santiago de Cali, esto con el
-                    fin de mejorar las
-                    habilidades de programación de nuestros estudiantes y su eficiencia en entornos
-                    de competición ya
+                <p>USC- CodeWarriors es una plataforma concebida para ser usada en la práctica de la programación
+                    competitiva dentro del campus de la Universidad Santiago de Cali, esto con el fin de mejorar las
+                    habilidades de programación de nuestros estudiantes y su eficiencia en entornos de competición ya
                     sea a nivel universidad o en competencias a nivel nacional.</p>
             </div>
         </section>
 
     </main>
-    <script>
-        var modal = document.getElementById("loginModal");
-
-        var btn = document.getElementById("loginLink");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
-
 <footer class="usc-footer">
     <div class="footer-content">
         <img src="/assets/logo.png" alt="Universidad Emblem">
         <h1>Programación Competitiva</h1>
-        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de
-            Educación Nacional..
+        <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional..
         </p>
-        <p>Personería jurídica otorgada por el Ministerio de Justicia mediante la Resolución No.
-            2.800 del 02 de
+        <p>Personería jurídica otorgada por el Ministerio de Justicia mediante la Resolución No. 2.800 del 02 de
             septiembre de 1959.</p>
-        <p>Reconocida como Universidad por el Decreto No. 1297 de 1964 emanado del Ministerio de
-            Educación Nacional.</p>
+        <p>Reconocida como Universidad por el Decreto No. 1297 de 1964 emanado del Ministerio de Educación Nacional.</p>
         <p> > 2024 Universidad Santiago de Cali - Todos los derechos reservados</p>
     </div>
 </footer>
